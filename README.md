@@ -15,3 +15,5 @@ An analytics dashboard for Ann Taylor comprising of important metrics such as:
 and many more...
 
 This application employs the use of the Facebook Graph API, the Pinterest API, the Google Charts API to extract and effectively display analytics drawn from Ann Taylor's Facebook and Pinterest page.
+
+![alt tag](https://github.com/tikabom/ann_taylor_dash/blob/master/ann-taylor.png)
