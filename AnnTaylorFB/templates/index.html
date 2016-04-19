@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ann Taylor - Facebook Page Analytics</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.hotkeys-0.7.9.min.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/highcharts-more.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.load("visualization", "1", {packages:["treemap"]});
+      google.load('visualization', '1', {packages: ['geochart']});
+      google.load('visualization', '1', {packages:['gauge']});
+</script>
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+	<div class="dashboard">
+		<div id="chart1" class="container">
+			<div class="sorter">
+				<div id="type">
+					<label>Type of Posts: </label>
+					<a class="all selected">All</a>
+					<a class="promotions">Promotions</a>
+					<a class="blog">Blog</a>
+					<a class="pinterest">Pinterest</a>
+					<a class="instagram">Instagram</a>
+					<a class="catalog">Catalogues</a>
+					<a class="product">Products</a>
+				</div>
+				<div id="order">
+					<label>Order By: </label>
+					<a class="alpha selected">Alphabet</a>
+					<a class="recent">Most recent</a>
+					<a class="likes">Most likes</a>
+					<a class="comments">Most comments</a>
+					<a class="shares">Most shares</a>
+				</div>
+			</div>
+			<div class="chart">
+				<table>
+					<tr>
+						<td>
+							<img class="first" alt="first" src="../css/images/first.png" />
+							<img class="prev" alt="prev" src="../css/images/prev.png" />
+						</td>
+						<td>
+							<div id="chart1container"></div>
+						</td>
+						<td>
+							<img class="next" alt="next" src="../css/images/next.png" />
+							<img class="last" alt="last" src="../css/images/last.png" />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="facebook" class="switch active">
+			<div class="name container"><label></label></div>
+			<div id="comments" class="container">
+				<table>
+					<tr>
+						<td>
+							<div id="chart4"></div>
+							<div class="description"></div>
+						</td>
+						<td><div id="chart5"></div></td>
+					</tr>
+				</table>
+			</div>
+			<div id="sentiments" class="container">
+				<table>
+					<tr>
+						<td><div id="chart2"></div></td>
+						<td>
+							<div id="chart3"></div>
+							<span class="description"></span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div id="anntaylor" class="container switch">
+		<div class="name"><label></label></div>
+			<table>
+			    <tr>
+			        <td class="first-quart">
+			        	<table>
+			        		<tr>
+			        			<td>
+			        				<div id="rating-meter"></div>
+			        			</td>
+			        			<td><div id="stylepie"></div></td>
+			        		</tr>
+			        	</table>
+			        </td>
+			        <td class="second-quart">
+			        	<table>
+			        		<tr>
+			        			<td><div id="sentimap"></div></td>
+			        			<td><div id="sentipie"></div></td>
+			        		</tr>
+			        	</table>      	
+			        </td>
+			    </tr>
+			    <tr>
+			    	<td class="third-quart"><div id="map"></div></td>
+			    	<td class="fourth-quart">
+			    		<table>
+			    			<tr>
+			    				<td><div id="bodystack"></div></td>
+			    				<td><div id="agestack"></div></td>
+			    			</tr>
+			    		</table>
+			    	</td>
+			    </tr>
+			</table> 
+		</div>
+	</div>
+</body>
+</html>

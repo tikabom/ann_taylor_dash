@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+
+body {
+	/*background-image: url("images/anntaylor.jpg");*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+table {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table tr {
+	width: 100%;
+}
+
+table tr td {
+	padding: 0;
+	margin: 0;
+}
+
+table tr td div {
+	text-align: center;
+}
+
+.dashboard {
+	width: 99%;
+	padding: 0.5%;
+	margin: 0;
+}
+
+#chart1 {
+	margin-bottom: 0.5%;	
+}
+
+.container {
+	padding: 0.5%;
+	background-color: #F2F2F2;
+	text-align: center;
+}
+
+.sorter {
+	margin-bottom: 1%;
+}
+
+.sorter div {
+	display: inline;
+}
+
+.sorter label{
+	padding: 0% 1% 0% 1%;
+	font-weight: bold;
+}
+
+.sorter a {
+	margin-left: -0.5%;
+	padding: 0% 1% 0% 1%;
+	border: 1px solid #585858;
+	background: -webkit-linear-gradient(#F2F2F2, #B5B5B5);
+	background: -moz-linear-gradient(#F2F2F2, #B5B5B5);
+	background: -ms-linear-gradient(#F2F2F2, #B5B5B5);
+	background: -o-linear-gradient(#F2F2F2, #B5B5B5);
+	background: linear-gradient(#F2F2F2, #B5B5B5);
+}
+
+.sorter a.selected {
+	background: -webkit-linear-gradient(#B5B5B5, #F2F2F2);
+	background: -moz-linear-gradient(#B5B5B5, #F2F2F2);
+	background: -ms-linear-gradient(#B5B5B5, #F2F2F2);
+	background: -o-linear-gradient(#B5B5B5, #F2F2F2);
+	background: linear-gradient(#B5B5B5, #F2F2F2);
+}
+
+.sorter a:HOVER {
+	cursor: pointer;
+}
+
+.chart td:FIRST-CHILD{
+	width: 10%;
+}
+
+.chart td:LAST-CHILD{
+	width: 10%;
+}
+
+#chart1container {
+	text-align: center;
+}
+
+.chart img:HOVER {
+	cursor: pointer;
+}
+
+#comments td:FIRST-CHILD {
+	width: 45%;
+}
+#comments td:FIRST-CHILD #chart4{
+	width: 97%;
+}
+
+#comments td:LAST-CHILD {
+	width: 45%;
+}
+
+#sentiments td:FIRST-CHILD {
+	width: 45%;
+}
+
+#sentiments td:LAST-CHILD {
+	width: 55%;
+}
+
+.description {
+	padding: 1%;
+	font-weight: bold;
+}
+
+.first-quart, .second-quart, .third-quart, .fourth-quart {
+	padding: 0.5%;
+	width: 50%;
+}
+
+#map {
+	text-align: center;
+}
+
+#map g path, #sentimap g path{
+	fill: #F4E757;
+	stroke: #504A0F
+}
+
+.name {
+	font-weight: bold;
+}
